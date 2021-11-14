@@ -4,6 +4,11 @@ The contents of the `vbcc` folder should be copied into your VBCC installation.
 
 ## Usage
 
+Syscalls are availble by adding the following to your code:
+```C
+#include <mcp/syscalls.h>
+```
+
 An executable can be produced using the following command:
 ```bash
 vc +a256-elf -o hello.elf hello.c
