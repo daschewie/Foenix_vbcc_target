@@ -17,7 +17,7 @@ If on a Windows machine, use the following:
 ```bash
 vc +a256-elf-win32 -o hello.elf hello.c
 ```
-The target argument can be ommitted if `$VBCC/config/a256-elf` is copied to `$VBCC/config/vc.config`:
+The target argument can be ommitted if `$VBCC/config/a2560-elf` is copied to `$VBCC/config/vc.config`:
 ```bash
 vc -o hello.elf hello.c
 ```
