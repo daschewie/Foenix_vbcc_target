@@ -11,11 +11,11 @@ Syscalls are availble by adding the following to your code:
 
 An executable can be produced using the following command:
 ```bash
-vc +a256-elf -o hello.elf hello.c
+vc +a2560-elf -o hello.elf hello.c
 ```
 If on a Windows machine, use the following:
 ```bash
-vc +a256-elf-win32 -o hello.elf hello.c
+vc +a2560-elf-win32 -o hello.elf hello.c
 ```
 The target argument can be ommitted if `$VBCC/config/a2560-elf` is copied to `$VBCC/config/vc.config`:
 ```bash
