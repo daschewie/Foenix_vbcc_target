@@ -78,9 +78,6 @@ size_t __write(int h,const char *p,size_t l) {
 }
 
 off_t __seek(int h,off_t offset,int origin) {
-    // Currently we dont support SEEK_END
-    if (origin == 3) return -1;
-
 	if (h > STDERR_FILENO) {
 		return sys_chan_seek(h - 3, offset, origin - 1);
 	} else {
