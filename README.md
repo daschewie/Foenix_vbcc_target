@@ -17,10 +17,6 @@ If on a Windows machine, use the following:
 ```bash
 vc +a2560-elf-win32 -o hello.elf hello.c
 ```
-The target argument can be ommitted if `$VBCC/config/a2560-elf` is copied to `$VBCC/config/vc.config`:
-```bash
-vc -o hello.elf hello.c
-```
 
 ## Build
 
