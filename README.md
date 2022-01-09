@@ -24,7 +24,7 @@ vc +a2560-elf-win32 -o hello.elf hello.c
 
 ## Build
 
-For your convience the libraries are prebuild in the `vbcc` directory and can be copied to you VBCC install. However, if you need to tweak the code:
+For your convenience the libraries are prebuild in the `vbcc` directory and can be copied to you VBCC install. However, if you need to tweak the code:
 
 - `startup.s` configures the entry point, defines syscall function, and calls sys_exit when main returns.
 - `io.c` implements vbcc io stub funtions to enable stdio.
