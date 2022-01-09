@@ -1,4 +1,4 @@
-# a2560-elf target for VBCC
+# Foenix targets for VBCC
 
 Foenix A2560 build target for VBCC that produced ELF binaries.
 
@@ -13,13 +13,22 @@ Syscalls are availble by adding the following to your code:
 #include <mcp/syscalls.h>
 ```
 
-An executable can be produced using the following command:
+An ELF executable can be produced using the following command:
 ```bash
 vc +a2560-elf -o hello.elf hello.c
 ```
 If on a Windows machine, use the following:
 ```bash
 vc +a2560-elf-win32 -o hello.elf hello.c
+```
+
+An srec28 executable can be produced using the following command:
+```bash
+vc +a2560-s28 -o hello.s28 hello.c
+```
+If on a Windows machine, use the following:
+```bash
+vc +a2560-s28-win32 -o hello.s28 hello.c
 ```
 
 ## Build
