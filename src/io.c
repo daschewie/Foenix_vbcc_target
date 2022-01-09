@@ -67,7 +67,7 @@ size_t __read(int h,char *p,size_t l) {
     }
 }
 
-size_t __write(int h,const char *p,size_t l) {
+size_t __write(int h, char *p, size_t l) {
     if (h == STDOUT_FILENO || h == STDERR_FILENO) {
         return sys_chan_write(0, p, l);
     } else if (h == STDIN_FILENO) {
@@ -77,7 +77,7 @@ size_t __write(int h,const char *p,size_t l) {
     }
 }
 
-off_t __seek(int h,off_t offset,int origin) {
+long __seek(int h, long offset, int origin) {
 	if (h > STDERR_FILENO) {
 		return sys_chan_seek(h - 3, offset, origin - 1);
 	} else {
