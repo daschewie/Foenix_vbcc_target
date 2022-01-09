@@ -21,6 +21,7 @@ If on a Windows machine, use the following:
 ```bash
 vc +a2560-elf-win32 -o hello.elf hello.c
 ```
+---
 
 An srec28 executable can be produced using the following command:
 ```bash
