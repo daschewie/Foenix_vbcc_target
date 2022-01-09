@@ -1,5 +1,9 @@
 # a2560-elf target for VBCC
 
+Foenix A2560 build target for VBCC.
+
+## Install
+
 The contents of the `vbcc` folder should be copied into your VBCC installation.
 
 ## Usage
