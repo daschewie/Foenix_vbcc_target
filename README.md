@@ -1,6 +1,6 @@
 # a2560-elf target for VBCC
 
-Foenix A2560 build target for VBCC.
+Foenix A2560 build target for VBCC that produced ELF binaries.
 
 ## Install
 
