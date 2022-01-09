@@ -1,5 +1,9 @@
 # a2560-elf target for VBCC
 
+Foenix A2560 build target for VBCC that produced ELF binaries.
+
+## Install
+
 The contents of the `vbcc` folder should be copied into your VBCC installation.
 
 ## Usage
@@ -17,12 +21,10 @@ If on a Windows machine, use the following:
 ```bash
 vc +a2560-elf-win32 -o hello.elf hello.c
 ```
-The target argument can be ommitted if `$VBCC/config/a2560-elf` is copied to `$VBCC/config/vc.config`:
-```bash
-vc -o hello.elf hello.c
-```
 
 ## Build
+
+For your convenience the libraries are prebuild in the `vbcc` directory and can be copied to you VBCC install. However, if you need to tweak the code:
 
 - `startup.s` configures the entry point, defines syscall function, and calls sys_exit when main returns.
 - `io.c` implements vbcc io stub funtions to enable stdio.
