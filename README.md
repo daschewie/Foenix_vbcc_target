@@ -1,3 +1,5 @@
+This project is deprecated, please see https://github.com/hth313/Calypsi-m68k-Foenix
+
 # Foenix targets for VBCC
 
 Foenix A2560 build target for VBCC that produced ELF binaries.
